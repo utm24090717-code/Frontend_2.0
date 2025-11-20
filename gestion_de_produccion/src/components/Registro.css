@@ -1,0 +1,102 @@
+/* ========= RESET GARANTIZADO ========= */
+.registro-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(35deg, #c3002f, #870322) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* ========= Tarjeta ========= */
+.registro-card {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  margin: 20px;
+}
+
+/* ========= Títulos ========= */
+.registro-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #c3002f;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.registro-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* ========= Inputs ========= */
+.registro-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #d0d0d0;
+  font-size: 15px;
+  border-radius: 8px;
+  background: #fafafa;
+  box-sizing: border-box;
+  display: block;
+}
+
+.registro-input:focus {
+  border-color: #c3002f;
+  outline: none;
+  background: #fff;
+}
+
+/* ========= Botón ========= */
+.registro-btn {
+  width: 100%;
+  padding: 14px;
+  background: #c3002f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.registro-btn:hover {
+  background: #a00027;
+}
+
+/* ========= Footer ========= */
+.registro-footer {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+  color: #555;
+}
+
+.registro-footer a {
+  color: #c3002f;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.registro-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
