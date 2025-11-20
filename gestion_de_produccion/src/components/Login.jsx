@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../App.css";
 
 function Login() {
@@ -22,7 +22,8 @@ function Login() {
         <div className="card">
           <h2 className="title">BIENVENIDO</h2>
           <p className="subtitle">
-            ¿No tienes una cuenta?<a href="/Registro"> Crear una cuenta</a>
+            ¿No tienes una cuenta?
+            <Link to="/Registro"> Crear una cuenta</Link>
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -52,6 +53,8 @@ function Login() {
           <div className="login-links">
             <a href="#">¿Olvidaste tu contraseña?</a>
           </div>
+
+          
         </div>
       </div>
 
