@@ -1,7 +1,13 @@
+/* App.css - Mantén solo esto o asegúrate que no afecte al registro */
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
   background-color: #f9fafb;
+}
+
+/* Si tienes un contenedor principal, asegúrate que no interfiera */
+.app-container {
+  width: 100%;
 }
 
 .login-container {

@@ -22,7 +22,7 @@ function Login() {
         <div className="card">
           <h2 className="title">BIENVENIDO</h2>
           <p className="subtitle">
-            ¿No tienes una cuenta?<a href="#"> Crear una cuenta</a>
+            ¿No tienes una cuenta?<a href="/Registro"> Crear una cuenta</a>
           </p>
 
           <form onSubmit={handleSubmit}>
