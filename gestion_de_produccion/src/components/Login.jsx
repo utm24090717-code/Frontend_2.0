@@ -11,7 +11,7 @@ function Login() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Correo:", email, "Contraseña:", password);
-    navigate("/dashboard"); //para navegar al dashboard
+    navigate("/FinanzasDashboard"); //para navegar al dashboard
   }
 
   return (
