@@ -1,17 +1,34 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { login } from "../services/authService";
 import "../App.css";
 
 function Login() {
-  //pantalla de login
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log("Correo:", email, "Contraseña:", password);
-    navigate("/dashboard"); //para navegar al dashboard
+    setErrorMsg("");
+
+    try {
+      const response = await login(email, password);
+
+      console.log("Respuesta del backend:", response.data);
+
+      // Aquí puedes guardar el usuario si lo necesitas
+      // localStorage.setItem("usuario", JSON.stringify(response.data.usuario));
+
+      navigate("/dashboard"); // Login OK → ir al dashboard
+
+    } catch (error) {
+      console.log(error);
+
+      // Mostrar mensaje del backend
+      setErrorMsg(error.response?.data?.error || "Error al iniciar sesión");
+    }
   }
 
   return (
@@ -43,6 +60,10 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
               className="input"
             />
+
+            {errorMsg && (
+              <p style={{ color: "red", fontSize: 14 }}>{errorMsg}</p>
+            )}
 
             <button type="submit" className="button">
               Iniciar sesión
