@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import LoginPage from "./components/Login.jsx";
-import Registro from "./components/Registro.jsx";
-import Dashboard from "./components/Dashboard.jsx";
+import LoginPage from "./components/Login";
+import Registro from "./components/Registro";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
@@ -15,3 +15,4 @@ function App() {
 }
 
 export default App;
+

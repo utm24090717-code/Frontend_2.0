@@ -51,7 +51,7 @@ function Login() {
           </form>
 
           <div className="login-links">
-            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="/Contraseña">¿Olvidaste tu contraseña?</a>
           </div>
 
           
