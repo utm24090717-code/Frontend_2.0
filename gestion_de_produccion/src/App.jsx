@@ -4,13 +4,14 @@ import LoginPage from "./components/Login";
 import Registro from "./components/Registro";
 import Dashboard from "./components/Dashboard";
 import Contraseña from "./components/Contraseña"
+import FinanzasDashboard from "./components/dashboards/FinanzasDashboard";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<FinanzasDashboard />} />
         <Route path="/Registro" element={<Registro />} />
         <Route path="/Contraseña" element={<Contraseña />} />
       </Routes>
