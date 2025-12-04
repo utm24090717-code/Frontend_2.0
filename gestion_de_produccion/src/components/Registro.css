@@ -21,7 +21,7 @@
   background: white;
   padding: 40px 30px;
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   margin: 20px;
 }
 
@@ -53,6 +53,7 @@
   background: #fafafa;
   box-sizing: border-box;
   display: block;
+  color: #333; /* ← AGREGAR ESTO */
 }
 
 .registro-input:focus {
@@ -97,6 +98,3 @@
 .registro-footer a:hover {
   text-decoration: underline;
 }
-
-
-
